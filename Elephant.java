@@ -14,6 +14,7 @@ public class Elephant extends Actor
      */
     public void act()
     {
+        //Add your action code here.
         if(Greenfoot.isKeyDown("left"))
         {
             move(-1);
@@ -22,5 +23,7 @@ public class Elephant extends Actor
         {
             move(1);
         }
+        //Remove apple if elephant eats it
+        removeTouching(Apple.class);
     }
 }
