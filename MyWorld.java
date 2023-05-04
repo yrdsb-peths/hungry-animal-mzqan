@@ -21,7 +21,7 @@ public class MyWorld extends World
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 200);
         
-        createApple():
+        createApple();
     }
     /**
      * Create a new apple at a random location at top of screen
