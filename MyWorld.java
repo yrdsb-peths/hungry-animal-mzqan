@@ -6,16 +6,14 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Megan Lee
  * @version May 2023
  */
-public class MyWorld extends World
-{
+public class MyWorld extends World {    
     public int score = 0;
     Label scoreLabel;
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public MyWorld()
-    {    
+    public MyWorld(){    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false);
 
@@ -24,7 +22,7 @@ public class MyWorld extends World
         addObject(elephant, 300, 300);
         
         //Create a label
-        Label scoreLabel = new Label(0, 80);
+        scoreLabel = new Label(0, 80);
         addObject(scoreLabel, 50, 50);
         
         createApple();
@@ -33,8 +31,7 @@ public class MyWorld extends World
     /**
      * End the game and draw 'Game Over'
      */
-    public void gameOver()
-    {
+    public void gameOver(){
         Label gameOverLabel = new Label("Game Over", 100);
         addObject(gameOverLabel, 300, 200);
     }
@@ -42,8 +39,7 @@ public class MyWorld extends World
     /**
      * Increase score
      */
-    public void increaseScore() 
-    {
+    public void increaseScore() {
         score++;
         scoreLabel.setValue(score);
     }
@@ -51,8 +47,7 @@ public class MyWorld extends World
     /**
      * Create a new apple at a random location at top of screen
      */
-    public void createApple()
-    {
+    public void createApple(){
         Apple apple = new Apple();
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
