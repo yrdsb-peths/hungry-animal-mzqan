@@ -11,6 +11,8 @@ public class Apple extends Actor {
      * Act - do whatever the Apple wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int speed = 1;
+    
     public void act(){
         //Apple falls downwards
         int x = getX();
@@ -24,5 +26,9 @@ public class Apple extends Actor {
             world.gameOver();
             world.removeObject(this);
         }
+    }
+    
+    public void setSpeed(int spd) {
+        speed = spd; 
     }
 }
