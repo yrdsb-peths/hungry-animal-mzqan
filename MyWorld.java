@@ -27,6 +27,7 @@ public class MyWorld extends World {
         addObject(scoreLabel, 50, 50);
         
         createApple();
+        createBomb();
     }
     
     /**
@@ -50,6 +51,14 @@ public class MyWorld extends World {
     }
     
     /**
+     * Decrease score
+     */
+    public void decreaseScore() {
+        score--;
+        scoreLabel.setValue(score);
+    }
+    
+    /**
      * Create a new apple at a random location at top of screen
      */
     public void createApple(){
@@ -58,5 +67,16 @@ public class MyWorld extends World {
         int x = Greenfoot.getRandomNumber(600);
         int y = 0;
         addObject(apple, x, y);
+    }
+    
+    /**
+     * Create a new bomb at a random location at top of screen
+     */
+    public void createBomb(){
+        Bomb bomb = new Bomb();
+        bomb.setSpeed(level);
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(bomb, x, y);
     }
 }

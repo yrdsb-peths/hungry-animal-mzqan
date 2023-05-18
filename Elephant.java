@@ -71,6 +71,7 @@ public class Elephant extends Actor{
         }
         //Remove apple if elephant eats it
         eat();
+        explode();
         
         //Animate the elephant
         animateElephant();
@@ -88,4 +89,12 @@ public class Elephant extends Actor{
             elephantSound.play();
         }
     }     
+    public void explode() {
+        if(isTouching(Bomb.class)) {    
+            removeTouching(Bomb.class);
+            MyWorld world = (MyWorld) getWorld();
+            world.createBomb();
+            world.decreaseScore();
+        }
+    }
 }
