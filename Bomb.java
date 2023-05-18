@@ -11,17 +11,17 @@ public class Bomb extends Actor
     private int speed = 1;
 
     public void act(){
-        //Apple falls downwards
+        //Bomb falls downwards
         int x = getX();
         int y = getY() + 2;
         setLocation(x, y);
         
-        //Remove apple and draw game over when apple gets to bottom 
+        //Remove bomb and create new bomb when it reaches the bottom
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight()) 
         {
-            world.gameOver();
             world.removeObject(this);
+            world.createBomb();
         }
     }
     

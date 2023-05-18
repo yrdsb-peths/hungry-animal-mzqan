@@ -13,6 +13,7 @@ public class Elephant extends Actor{
      */
     
     GreenfootSound elephantSound = new GreenfootSound("elephantcub.mp3");
+    GreenfootSound bombSound = new GreenfootSound("bombexplosion.mp3");
     GreenfootImage[] idleRight = new GreenfootImage[8];
     GreenfootImage[] idleLeft = new GreenfootImage[8];
     
@@ -95,6 +96,7 @@ public class Elephant extends Actor{
             MyWorld world = (MyWorld) getWorld();
             world.createBomb();
             world.decreaseScore();
+            bombSound.play();
         }
     }
 }
