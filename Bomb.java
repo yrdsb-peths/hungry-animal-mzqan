@@ -1,22 +1,21 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Bomb here.
+ * Danger for our elephant.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Megan Lee
+ * @version May 2023
  */
 public class Bomb extends Actor
 {
     private int speed = 1;
-
     public void act(){
         //Bomb falls downwards
         int x = getX();
         int y = getY() + 2;
         setLocation(x, y);
         
-        //Remove bomb and create new bomb when it reaches the bottom
+        //If bomb gets to bottom, remove bomb
         MyWorld world = (MyWorld) getWorld();
         if(getY() >= world.getHeight()) 
         {
@@ -24,7 +23,10 @@ public class Bomb extends Actor
             world.createBomb();
         }
     }
-    
+    /**
+     * Set speed at which bomb falls
+     * 
+     */
     public void setSpeed(int spd) {
         speed = spd; 
     }
