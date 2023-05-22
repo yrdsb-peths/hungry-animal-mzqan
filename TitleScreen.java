@@ -11,7 +11,7 @@ public class TitleScreen extends World
     Label titleLabel = new Label("The Elephant", 60);
     /**
      * Constructor for objects of class TitleScreen.
-     * 
+     *
      */
     public TitleScreen()
     {    
@@ -23,6 +23,7 @@ public class TitleScreen extends World
     }
     /**
      * The main world act loop
+     * Once "space" is pressed, start the game
      */
     public void act() {
         if(Greenfoot.isKeyDown("space")) { 

@@ -7,16 +7,17 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version May 2023
  */
 public class MyWorld extends World {    
-    //var for points scored
+    //Var for points scored
     public int score = 0;
 
-    //scope of scoreLabel
+    //Scope of scoreLabel
     Label scoreLabel;
     
-    //var for increasing difficulty
+    //Var for increasing difficulty
     int level = 1;
     /**
      * Constructor for objects of class MyWorld.
+     * 
      */
     public MyWorld(){    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
