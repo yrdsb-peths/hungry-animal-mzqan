@@ -1,14 +1,11 @@
-# Hungry Animal Tutorial
-This is the README.md file.
-Change this file to show your intended audience what you want them to see.
+The Elephant
+By: Megan Lee
 
-You can use **Markdown** syntax to format this file to do things like **bold** or *italicize* text.
-[Markdown basics](https://www.markdownguide.org/getting-started/)
+What is it?
+In this game, you play as an elephant. Your objective is to eat as many of the falling apples as you can, without exploding any of the bombs. With every 5 points you score, yhe game increases in difficulty. Try your best to not let any apple touch the ground, or it will be game over!
 
-This particular repository is the starting template for the Hungry Elephant tutorial.
+How do I Play?
+To start the game press <space> on the keyboard. 
+Use the arrow keys to go left and right to move across the screen. 
 
-[Part 1: Greenfoot Basics](https://youtu.be/zxaa3X0MihI)
 
-[Part 2: Game Enhancements](https://youtu.be/TwID9i0Ey6o)
-
-[Part 3: Final Touches](https://youtu.be/GT-eFwa4Abc)
