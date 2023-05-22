@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bomb extends Actor
 {
     private int speed = 1;
+    
     public void act(){
         //Bomb falls downwards
         int x = getX();
@@ -23,6 +24,7 @@ public class Bomb extends Actor
             world.createBomb();
         }
     }
+    
     /**
      * Set speed at which bomb falls
      * 

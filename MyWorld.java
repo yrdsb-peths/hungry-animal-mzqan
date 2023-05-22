@@ -15,6 +15,7 @@ public class MyWorld extends World {
     
     //Var for increasing difficulty
     int level = 1;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 

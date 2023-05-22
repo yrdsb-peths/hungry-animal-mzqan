@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TitleScreen extends World
 {
     Label titleLabel = new Label("The Elephant", 60);
+    
     /**
      * Constructor for objects of class TitleScreen.
      *
@@ -21,6 +22,7 @@ public class TitleScreen extends World
         addObject(titleLabel, getWidth()/2, 200);
         prepare();
     }
+    
     /**
      * The main world act loop
      * Once "space" is pressed, start the game

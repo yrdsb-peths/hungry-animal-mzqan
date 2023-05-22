@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Apple extends Actor {
     private int speed = 1;
+    
     public void act(){
         //Apple falls downwards
         int x = getX();
@@ -22,6 +23,7 @@ public class Apple extends Actor {
             world.removeObject(this);
         }
     }
+    
     /**
      * Set speed at which apple falls
      * 
